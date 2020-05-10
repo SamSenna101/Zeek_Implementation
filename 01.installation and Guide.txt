@@ -1,0 +1,43 @@
+Installation Guide
+
+OS: Ubuntu 18.04
+VM: Virtual Box
+
+---Commands---
+sudo su
+apt-get update -y
+apt-get upgrade -y
+apt-get dist-upgrade -y
+reboot
+
+sudo apt-get update && sudo apt-get dist-upgrade
+
+sudo apt-get install net-tools
+
+sudo apt update
+
+sudo apt install openssh-server
+
+sudo systemctl status ssh (then q)
+
+sudo ufw allow ssh
+
+sudo apt-get install sendmail
+
+sudo apt-get install git
+
+sudo apt-get install cmake make gcc g++ flex bison libpcap-dev libssl-dev python-dev swig zlib1g-dev
+
+vi ~/.bashrc
+
+ * ADD the following line to the end of the file and then save and quit.
+export PATH=/usr/local/zeek/bin:$PATH
+
+git clone --recursive https://github.com/zeek/zeek
+
+./configure
+ * Make sure you are in the Zeek folder when yuo executing ./configure command
+
+make
+
+sudo make install
