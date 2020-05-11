@@ -41,3 +41,25 @@ git clone --recursive https://github.com/zeek/zeek
 make
 
 sudo make install
+
+Configure Zeek
+
+get the network interface name using and note that down 
+
+ifconfig
+
+example : en0 , en1
+
+sudo vi /usr/local/zeek/etc/node.cfg
+
+Edit interface= line with the en* code
+
+example : interface=en0
+
+Save the file
+
+vi /usr/local/zeek/etc/zeekctl.cfg
+
+Edit MailTo = line with your email address
+
+Save the file
