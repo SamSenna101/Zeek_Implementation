@@ -1,0 +1,9 @@
+After the installation type the following to run the zeek instance
+
+sudo /usr/local/zeek/bin/zeekctl
+
+install
+
+deploy
+
+exit
